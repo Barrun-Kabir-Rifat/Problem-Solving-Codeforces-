@@ -34,7 +34,7 @@ while(t--)
     int curr_ind=i+1;
     if(curr_ind==1||curr_ind==n)
     {
-        ans=n-1;
+        ans=n-1;  
     }
     else
     {
