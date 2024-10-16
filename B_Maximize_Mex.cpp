@@ -48,8 +48,6 @@ int main()
             {
 
                 mp[j]--;
-                
-    
                     ll rem = j % k;
                     rem_of_smallindex[rem] += (mp[j]);
                 j++;
