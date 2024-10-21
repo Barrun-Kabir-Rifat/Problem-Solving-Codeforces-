@@ -22,32 +22,15 @@ while(t--)
 {
  ll n;
 cin>>n;
-ll arr[n];
-ll sum=0;
-for(int i=0;i<n;i++)
-{
+ll temp=n;
 
-cin>>arr[i];
-sum=sum+arr[i];
-
-}
- sort(arr,arr+n);
- if(n<=2)
+for(ll i=30;i>=0;i--)
  {
-    cout<<-1<<en;
+   
+   int checkbit=(((1<<i) & temp ) !=0 );
+   cout<<checkbit;
  }
- else if((arr[(n/2)]*2*n)<sum)
- {
-    cout<<0<<en;
- }
- else 
- {
-   ll min_avg=(2*(arr[(n/2)]));
-   min_avg=min_avg*n;
-   ll ans=min_avg-sum;
-   cout<<ans+1<<en;
- }
-
+ cout<<en;
 }
    return 0;
 }
